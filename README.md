@@ -1,40 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# File Encryption & Decryption (AES-128)
 
-## Getting Started
+Proyek ini adalah aplikasi berbasis web untuk mengenkripsi dan mendekripsi file menggunakan algoritma AES-128. Aplikasi ini dibuat menggunakan Next.js dengan React dan Tailwind CSS. [Encrypt-Decrypt-AES128]()
 
-First, run the development server:
+## 🚀 Fitur
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- 🔐 **Enkripsi File**: Mengubah file asli menjadi format terenkripsi (`.enc`).
+- 🔓 **Dekripsi File**: Mengembalikan file terenkripsi ke bentuk aslinya.
+- 🔑 **Keamanan**: Menggunakan kunci 16 karakter untuk enkripsi dan dekripsi.
+- 📂 **Dukungan Berbagai Format**: Mendukung berbagai jenis file untuk dienkripsi.
+
+## 📂 Struktur Folder
+
+```
+📦 project-folder
+ ┣ 📂 public
+ ┃ ┗ 📄 favicon.ico
+ ┣ 📂 pages
+ ┃ ┣ 📄 _app.js
+ ┃ ┣ 📄 encrypt.js
+ ┃ ┣ 📄 decrypt.js
+ ┃ ┗ 📄 navbar.js
+ ┣ 📂 styles
+ ┃ ┗ 📄 globals.css
+ ┣ 📂 utils
+ ┃ ┗ 📄 encryption.js
+ ┣ 📄 .gitignore
+ ┣ 📄 package.json
+ ┣ 📄 README.md
+ ┗ 📄 next.config.js
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🔧 Instalasi & Menjalankan Proyek
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+1. **Clone repository**
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+   ```sh
+   git clone https://github.com/username/encryption-app.git
+   cd encryption-app
+   ```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+2. **Install dependencies**
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+   ```sh
+   npm install  # atau yarn install
+   ```
 
-## Learn More
+3. **Jalankan aplikasi**
 
-To learn more about Next.js, take a look at the following resources:
+   ```sh
+   npm run dev  # atau yarn dev
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+4. **Buka di browser**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```
+   http://localhost:3000
+   ```
 
-## Deploy on Vercel
+## ⚡ Cara Menggunakan
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### **1️⃣ Enkripsi File**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+- Pilih file yang ingin dienkripsi.
+- Masukkan kunci 16 karakter.
+- Klik tombol **Encrypt File**.
+- File hasil enkripsi (`.enc`) akan otomatis terunduh.
+
+### **2️⃣ Dekripsi File**
+
+- Pilih file dengan ekstensi `.enc`.
+- Masukkan kunci yang digunakan saat enkripsi.
+- Klik tombol **Decrypt & Download**.
+- File asli akan otomatis terunduh jika kunci benar.
+
+## 🛠 Teknologi yang Digunakan
+
+- **Next.js** (React Framework)
+- **Tailwind CSS** (Styling)
+- **CryptoJS** (Enkripsi & Dekripsi)
+
+## 📜 Lisensi
+
+Proyek ini menggunakan lisensi MIT. Silakan gunakan dan modifikasi sesuai kebutuhan.
+
+---
+
+💡 **Catatan**: Pastikan kunci yang digunakan untuk enkripsi dan dekripsi **sama** agar file dapat dikembalikan ke bentuk aslinya!
+

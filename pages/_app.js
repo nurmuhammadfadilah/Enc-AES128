@@ -1,8 +1,8 @@
 import "@/styles/globals.css";
 import { useEffect, useState } from "react";
-import Navbar from "./navbar";
-import Encrypt from "./encrypt";
-import Decrypt from "./Decrypt";
+import Navbar from "../components/Navbar";
+import Encrypt from "../components/Encrypt";
+import Decrypt from "../components/Decrypt";
 
 export default function App() {
   const [activePage, setActivePage] = useState("encrypt");
