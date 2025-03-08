@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 import Encrypt from "../components/Encrypt";
 import Decrypt from "../components/Decrypt";
 
-export default function App() {
+export default function App({activePage}) {
   const [activePage, setActivePage] = useState("encrypt");
   
   // Mengubah title halaman saat aktifPage berubah
