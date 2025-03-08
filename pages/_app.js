@@ -1,10 +1,10 @@
 import "@/styles/globals.css";
 import { useEffect, useState } from "react";
-import Navbar from "../components/Navbar";
-import Encrypt from "../components/Encrypt";
-import Decrypt from "../components/Decrypt";
+import Navbar from "@/components/Navbar";
+import Encrypt from "@/components/Encrypt";
+import Decrypt from "@/components/Decrypt";
 
-export default function App({activePage}) {
+export default function App() {
   const [activePage, setActivePage] = useState("encrypt");
   
   // Mengubah title halaman saat aktifPage berubah

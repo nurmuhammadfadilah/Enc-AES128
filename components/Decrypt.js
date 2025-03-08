@@ -18,7 +18,7 @@ export default function Decrypt() {
     setEncryptedFile(file);
   };
 
-  const handleDecrypt = async () => {
+  async function handleDecrypt ()  {
     if (!encryptedFile || key.length !== 16) {
       alert("Harap pilih file terenkripsi dan pastikan kunci memiliki 16 karakter.");
       return;
