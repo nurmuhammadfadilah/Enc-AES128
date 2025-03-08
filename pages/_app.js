@@ -23,14 +23,3 @@ export default function App() {
     </div>
   );
 }
-
-// Menggunakan getServerSideProps untuk menentukan judul halaman
-export async function getServerSideProps(context) {
-  // Tentukan halaman default
-  const activePage = context.query.page || "encrypt"; // Bisa pakai query param (?page=decrypt)
-  const pageTitle = activePage === "encrypt" ? "Encrypt File - AES128" : "Decrypt File - AES128";
-
-  return {
-    props: { pageTitle },
-  };
-}
