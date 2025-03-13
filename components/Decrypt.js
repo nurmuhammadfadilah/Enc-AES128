@@ -18,7 +18,7 @@ export default function Decrypt() {
     setEncryptedFile(file);
   };
 
-  async function handleDecrypt ()  {
+  const handleDecrypt = async () => {
     if (!encryptedFile || key.length !== 16) {
       alert("Harap pilih file terenkripsi dan pastikan kunci memiliki 16 karakter.");
       return;
@@ -55,7 +55,7 @@ export default function Decrypt() {
           placeholder="Enter 16-character key"
           className="border p-2 w-full mb-3"
         />
-        <button onClick={handleDecrypt} className="bg-green-600 text-white px-4 py-2 rounded w-full">
+        <button onClick={handleDecrypt} className="bg-green-600 text-white px-4 py-2 rounded w-full hover:bg-green-500 cursor-pointer">
           Decrypt & Download
         </button>
       </div>

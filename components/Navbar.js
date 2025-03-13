@@ -10,7 +10,7 @@ export default function Navbar({ setActivePage }) {
 
         <div className="relative">
           <button
-            className="bg-blue-600 px-4 py-2 rounded-lg shadow hover:bg-blue-500 transition"
+            className="bg-blue-600 px-4 py-2 rounded-lg shadow hover:bg-blue-500 cursor-pointer transition"
             onClick={() => setIsOpen(!isOpen)}
           >
             Menu ▼
@@ -22,7 +22,7 @@ export default function Navbar({ setActivePage }) {
                   setActivePage("encrypt");
                   setIsOpen(false);
                 }}
-                className="block px-4 py-2 hover:bg-gray-200 w-full text-left"
+                className="block px-4 py-2 hover:bg-gray-200 cursor-pointer w-full text-left"
               >
                 🔐 Encrypt File
               </button>
@@ -31,7 +31,7 @@ export default function Navbar({ setActivePage }) {
                   setActivePage("decrypt");
                   setIsOpen(false);
                 }}
-                className="block px-4 py-2 hover:bg-gray-200 w-full text-left"
+                className="block px-4 py-2 hover:bg-gray-200 cursor-pointer w-full text-left"
               >
                 🔓 Decrypt File
               </button>

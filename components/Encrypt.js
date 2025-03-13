@@ -45,7 +45,7 @@ export default function Encrypt() {
           placeholder="Enter 16-character key"
           className="border p-2 w-full mb-3"
         />
-        <button onClick={handleEncrypt} className="bg-purple-600 text-white px-4 py-2 rounded w-full">
+        <button onClick={handleEncrypt} className="bg-purple-600 text-white px-4 py-2 rounded w-full hover:bg-purple-500 cursor-pointer">
           Encrypt & Download
         </button>
       </div>
