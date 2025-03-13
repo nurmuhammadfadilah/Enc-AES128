@@ -1,4 +1,4 @@
-import * as CryptoJS from "crypto-js";
+import CryptoJS from "crypto-js";
 
 /**
  * Mengenkripsi file dengan AES-128-CBC
